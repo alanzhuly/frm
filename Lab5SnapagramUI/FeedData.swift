@@ -31,9 +31,9 @@ enum Constants {
 
 class FeedData {
     let threads: [Thread] = [
-        Thread(name: "memes", emoji: "😂", unread: 2),
-        Thread(name: "dogs", emoji: "🐶", unread: 1),
-        Thread(name: "fashion", emoji: "🕶", unread: 0),
+        Thread(name: "TOPPA", emoji: "😂", unread: 2),
+        Thread(name: "CS61A", emoji: "🐶", unread: 1),
+        Thread(name: "MyFriends", emoji: "🕶", unread: 0),
         Thread(name: "fam", emoji: "👨‍👩‍👧‍👦", unread: 0),
         Thread(name: "tech", emoji: "💻", unread: 3),
         Thread(name: "eats", emoji: "🍱", unread: 4),
