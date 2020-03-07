@@ -26,7 +26,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UITableViewD
             
             cell.unreadLabel.backgroundColor = Constants.snapagramBlue
             cell.unreadLabel.layer.masksToBounds = true
-            cell.unreadLabel.layer.cornerRadius = cell.unreadLabel.frame.width / 2
+            cell.unreadLabel.layer.cornerRadius = cell.unreadLabel.frame.width / 3
             
             cell.emojiLabel.layer.borderWidth = 3
             cell.emojiLabel.layer.cornerRadius = cell.emojiLabel.frame.width / 2
