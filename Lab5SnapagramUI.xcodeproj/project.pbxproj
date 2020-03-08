@@ -15,6 +15,8 @@
 		B0CAEB3724105F75008F0C18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0CAEB3524105F75008F0C18 /* Main.storyboard */; };
 		B0CAEB3C24105F76008F0C18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0CAEB3B24105F76008F0C18 /* Assets.xcassets */; };
 		B0CAEB6324105FD6008F0C18 /* FeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CAEB6224105FD6008F0C18 /* FeedData.swift */; };
+		D87A5E802415749400040D05 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87A5E7F2415749400040D05 /* CreateViewController.swift */; };
+		D87A5E822415755A00040D05 /* YoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87A5E812415755A00040D05 /* YoursViewController.swift */; };
 		D88467A5241325DE002C5353 /* ThreadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88467A4241325DE002C5353 /* ThreadCollectionViewCell.swift */; };
 		D88467A724132CA6002C5353 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88467A624132CA6002C5353 /* FeedTableViewCell.swift */; };
 		D8D87D4624143DB400A76C91 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D87D4524143DB400A76C91 /* Launch Screen.storyboard */; };
@@ -50,6 +52,8 @@
 		B0CAEB4524105F76008F0C18 /* Lab5SnapagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab5SnapagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CAEB5024105F76008F0C18 /* Lab5SnapagramUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lab5SnapagramUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CAEB6224105FD6008F0C18 /* FeedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedData.swift; sourceTree = "<group>"; };
+		D87A5E7F2415749400040D05 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreateViewController.swift; path = ../../../Documents/CreateViewController.swift; sourceTree = "<group>"; };
+		D87A5E812415755A00040D05 /* YoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = YoursViewController.swift; path = ../../../Documents/YoursViewController.swift; sourceTree = "<group>"; };
 		D88467A4241325DE002C5353 /* ThreadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadCollectionViewCell.swift; sourceTree = "<group>"; };
 		D88467A624132CA6002C5353 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		D8D87D4524143DB400A76C91 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		324AFC98241566B000A8EDF7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D87A5E812415755A00040D05 /* YoursViewController.swift */,
+				D87A5E7F2415749400040D05 /* CreateViewController.swift */,
 				B0CAEB3324105F75008F0C18 /* ViewController.swift */,
 				324AFC962415663E00A8EDF7 /* SignUpViewController.swift */,
 				324AFC972415663E00A8EDF7 /* SignInViewController.swift */,
@@ -274,10 +280,12 @@
 			files = (
 				B0CAEB6324105FD6008F0C18 /* FeedData.swift in Sources */,
 				324AFC99241566D700A8EDF7 /* SignUpViewController.swift in Sources */,
+				D87A5E802415749400040D05 /* CreateViewController.swift in Sources */,
 				D88467A724132CA6002C5353 /* FeedTableViewCell.swift in Sources */,
 				D88467A5241325DE002C5353 /* ThreadCollectionViewCell.swift in Sources */,
 				324AFC9A241566DA00A8EDF7 /* SignInViewController.swift in Sources */,
 				B0CAEB3424105F75008F0C18 /* ViewController.swift in Sources */,
+				D87A5E822415755A00040D05 /* YoursViewController.swift in Sources */,
 				B0CAEB3024105F75008F0C18 /* AppDelegate.swift in Sources */,
 				B0CAEB3224105F75008F0C18 /* SceneDelegate.swift in Sources */,
 			);
@@ -444,7 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F4HAPMXNR;
-				INFOPLIST_FILE = Lab5SnapagramUI/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +470,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8F4HAPMXNR;
-				INFOPLIST_FILE = Lab5SnapagramUI/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,8 +530,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8F4HAPMXNR;
+				DEVELOPMENT_TEAM = 264SM8X3ZK;
 				INFOPLIST_FILE = Lab5SnapagramUIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,8 +551,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8F4HAPMXNR;
+				DEVELOPMENT_TEAM = 264SM8X3ZK;
 				INFOPLIST_FILE = Lab5SnapagramUIUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
