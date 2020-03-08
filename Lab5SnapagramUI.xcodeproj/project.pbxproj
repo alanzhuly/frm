@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		324AFC91241435B800A8EDF7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AFC90241435B800A8EDF7 /* SignInViewController.swift */; };
-		324AFC93241435E800A8EDF7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AFC92241435E800A8EDF7 /* SignUpViewController.swift */; };
+		324AFC99241566D700A8EDF7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AFC962415663E00A8EDF7 /* SignUpViewController.swift */; };
+		324AFC9A241566DA00A8EDF7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324AFC972415663E00A8EDF7 /* SignInViewController.swift */; };
 		B0CAEB3024105F75008F0C18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CAEB2F24105F75008F0C18 /* AppDelegate.swift */; };
 		B0CAEB3224105F75008F0C18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CAEB3124105F75008F0C18 /* SceneDelegate.swift */; };
 		B0CAEB3424105F75008F0C18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CAEB3324105F75008F0C18 /* ViewController.swift */; };
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		324AFC90241435B800A8EDF7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../../ios/Lab5SnapagramUI/Lab5SnapagramUI/SignInViewController.swift; sourceTree = "<group>"; };
-		324AFC92241435E800A8EDF7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../../ios/Lab5SnapagramUI/Lab5SnapagramUI/SignUpViewController.swift; sourceTree = "<group>"; };
+		324AFC962415663E00A8EDF7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		324AFC972415663E00A8EDF7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B0CAEB2C24105F75008F0C18 /* Lab5SnapagramUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab5SnapagramUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CAEB2F24105F75008F0C18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0CAEB3124105F75008F0C18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,10 +80,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324AFC95241565F500A8EDF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0CAEB6224105FD6008F0C18 /* FeedData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		324AFC98241566B000A8EDF7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B0CAEB3324105F75008F0C18 /* ViewController.swift */,
+				324AFC962415663E00A8EDF7 /* SignUpViewController.swift */,
+				324AFC972415663E00A8EDF7 /* SignInViewController.swift */,
+				D88467A624132CA6002C5353 /* FeedTableViewCell.swift */,
+				D88467A4241325DE002C5353 /* ThreadCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		324AFC9B2415670D00A8EDF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0CAEB3B24105F76008F0C18 /* Assets.xcassets */,
+				B0CAEB2F24105F75008F0C18 /* AppDelegate.swift */,
+				B0CAEB3124105F75008F0C18 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B0CAEB2324105F74008F0C18 = {
 			isa = PBXGroup;
 			children = (
-				B0CAEB2E24105F75008F0C18 /* Lab5SnapagramUI */,
+				B0CAEB4024105F76008F0C18 /* Info.plist */,
+				324AFC9B2415670D00A8EDF7 /* Supporting Files */,
+				324AFC98241566B000A8EDF7 /* Controller */,
+				324AFC95241565F500A8EDF7 /* Model */,
+				B0CAEB2E24105F75008F0C18 /* View */,
 				B0CAEB2D24105F75008F0C18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,23 +132,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0CAEB2E24105F75008F0C18 /* Lab5SnapagramUI */ = {
+		B0CAEB2E24105F75008F0C18 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B0CAEB2F24105F75008F0C18 /* AppDelegate.swift */,
-				B0CAEB3124105F75008F0C18 /* SceneDelegate.swift */,
-				B0CAEB6224105FD6008F0C18 /* FeedData.swift */,
-				B0CAEB3524105F75008F0C18 /* Main.storyboard */,
-				324AFC92241435E800A8EDF7 /* SignUpViewController.swift */,
-				D88467A624132CA6002C5353 /* FeedTableViewCell.swift */,
-				324AFC90241435B800A8EDF7 /* SignInViewController.swift */,
-				D88467A4241325DE002C5353 /* ThreadCollectionViewCell.swift */,
-				B0CAEB3324105F75008F0C18 /* ViewController.swift */,
-				B0CAEB3B24105F76008F0C18 /* Assets.xcassets */,
-				B0CAEB4024105F76008F0C18 /* Info.plist */,
 				D8D87D4524143DB400A76C91 /* Launch Screen.storyboard */,
+				B0CAEB3524105F75008F0C18 /* Main.storyboard */,
 			);
-			path = Lab5SnapagramUI;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,11 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324AFC91241435B800A8EDF7 /* SignInViewController.swift in Sources */,
 				B0CAEB6324105FD6008F0C18 /* FeedData.swift in Sources */,
-				324AFC93241435E800A8EDF7 /* SignUpViewController.swift in Sources */,
+				324AFC99241566D700A8EDF7 /* SignUpViewController.swift in Sources */,
 				D88467A724132CA6002C5353 /* FeedTableViewCell.swift in Sources */,
 				D88467A5241325DE002C5353 /* ThreadCollectionViewCell.swift in Sources */,
+				324AFC9A241566DA00A8EDF7 /* SignInViewController.swift in Sources */,
 				B0CAEB3424105F75008F0C18 /* ViewController.swift in Sources */,
 				B0CAEB3024105F75008F0C18 /* AppDelegate.swift in Sources */,
 				B0CAEB3224105F75008F0C18 /* SceneDelegate.swift in Sources */,
